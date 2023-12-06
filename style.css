@@ -35,7 +35,6 @@ body {
     width: 85%;
     height: 100%;
     flex-direction: column;
-    align-items: center;    
 }
 
 #title {
@@ -129,10 +128,10 @@ body {
 
 .tasks > label {
     color: #fff;
-    padding: 15px;
-    width: 90%;
+    width: 80%;
     text-decoration: none;
     position: absolute;
+    overflow: hidden;
 }
 
 .removeTask {
@@ -168,4 +167,11 @@ body {
 
 .adjusted-margin {
   margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        width: 100%;
+        margin: 0;
+    }
 }
